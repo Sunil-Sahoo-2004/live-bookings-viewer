@@ -73,3 +73,13 @@ npx serve client
 ```
 
 Then open your browser at: http://localhost:3000 or the Live Server port.
+
+## 🖼️ Screenshot
+
+![Live Bookings Screenshot](screenshot.png)
+
+---
+
+## 📃 License
+
+This project is licensed under the [MIT License](LICENSE).
