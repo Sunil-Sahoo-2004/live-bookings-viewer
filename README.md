@@ -25,18 +25,18 @@ A real-time full-stack web application to display and manage live booking update
 
 ## 📂 Project Structure
 
-live-bookings-viewer/
-├── client/
-│ ├── index.html # Main frontend UI
-│ ├── style.css # Styles
-│ └── app.js # JS logic (sockets + fetch)
-├── server/
-│ ├── controllers/ # Request logic
-│ ├── routes/ # API routing
-│ ├── services/ # Service layer
-│ ├── server.js # Main backend entry
-│ └── .env # Environment config
-└── README.md # Project documentation
+live-bookings-viewer/ <br>
+├── client/ <br>
+│ ├── index.html # Main frontend UI <br>
+│ ├── style.css # Styles <br>
+│ └── app.js # JS logic (sockets + fetch) <br>
+├── server/ <br>
+│ ├── controllers/ # Request logic <br>
+│ ├── routes/ # API routing <br>
+│ ├── services/ # Service layer <br>
+│ ├── server.js # Main backend entry <br>
+│ └── .env # Environment config <br>
+└── README.md # Project documentation <br>
 
 
 ---
@@ -77,4 +77,46 @@ Open the client/index.html file using Live Server or use:
 npx serve client
 ```
 
-Then open your browser at: http://localhost:3000 or the Live Server port.
+Then open your browser at: http://localhost:3000 or the Live Server port. <br>
+Or, open client/index.html using Live Server (VSCode Extension).
+
+## 🔐 Environment Variables
+
+| Key   | Value                     |
+|-------|---------------------------|
+| PORT  | Backend server port (e.g., 5000) |
+
+> ⚠️ Do **not** commit the `.env` file. Add it to `.gitignore` to keep it secure.
+
+---
+
+## 📷 Screenshots
+
+### 🖼️ Home Page (Live View)
+![Home Screenshot](./screenshots/home.png)
+
+---
+
+## 📦 API Endpoints
+
+| Method | Endpoint         | Description           |
+|--------|------------------|-----------------------|
+| GET    | `/`              | Server health check   |
+| POST   | `/bookings`      | Create a new booking  |
+| PUT    | `/bookings/:id`  | Update a booking      |
+| DELETE | `/bookings/:id`  | Delete a booking      |
+
+> All endpoints respond with `JSON` and are CORS-enabled.
+
+---
+
+## 📜 License
+
+This project is licensed under the [MIT License](./LICENSE).
+
+---
+
+## 🙌 Author
+
+Made with ❤️ by [Sunil Sahoo](https://github.com/Sunil-Sahoo-2004)
+
